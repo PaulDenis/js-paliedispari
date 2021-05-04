@@ -1,7 +1,11 @@
 // 2 - Pari e Dispari
 
 // L'utente sceglie pari o dispari e inserisce un numero da 1 a 5.
-var pariDispari = prompt("Pari o dispari?").toLowerCase();
+var pariDispari = "";
+do {
+    pariDispari = prompt("Pari o dispari?");
+} while (pariDispari != "pari" && pariDispari != "dispari");
+
 do {
     var playerNum = prompt("Scegli un numero da 1 a 5!");
 } while (playerNum <1 || playerNum > 5);
